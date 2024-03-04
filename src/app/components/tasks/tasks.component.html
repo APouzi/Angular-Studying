@@ -1,0 +1,3 @@
+<!-- Using the common component that was exported here, we are looping over the tasks with ngFor. -->
+<!-- We then want to pass in the property of task itself, which will be the task of that iteration in 'let task of taks' -->
+<app-task-item *ngFor = "let task of tasks" [task]="task"></app-task-item>
